@@ -10,11 +10,16 @@ import java.util.Scanner;
 
 public class Controller implements AssignmentInterface
 {
+    /*
+    * No border values since no input
+    *
+    *
+    */
     @Override
     public String readFile() throws IOException
     {
 
-        File file = new File("/home/pagh/2_SEMESTER/test/TestAss4/src/pagh/cphbusiness/nameFile");
+        File file = new File("nameFile");
         Scanner scanner = new Scanner(file);
         StringBuilder sb = new StringBuilder();
         try
@@ -35,17 +40,27 @@ public class Controller implements AssignmentInterface
         return sb.toString();
     }
 
+    /*
+    *
+    *
+    *
+    */
     @Override
     public Person parsePerson(String name)
     {
         return new Person(name);
     }
 
+    /*
+    *
+    *
+    *
+    */
     @Override
     public ArrayList<Person> getAllPeople() throws IOException
     {
 
-        File file = new File("/home/pagh/2_SEMESTER/test/TestAss4/src/pagh/cphbusiness/nameFile");
+        File file = new File("nameFile");
         Scanner scanner = new Scanner(file);
         ArrayList<Person> pplList = new ArrayList<>();
         try
@@ -64,6 +79,11 @@ public class Controller implements AssignmentInterface
         return pplList;
     }
 
+    /*
+    *
+    *
+    *
+    */
     @Override
     public Person getPersonWithLongestName(ArrayList<Person> pplList)
     {
@@ -80,6 +100,11 @@ public class Controller implements AssignmentInterface
         return currentLongestName;
     }
 
+    /*
+    *
+    *
+    *
+    */
     @Override
     public Person getPersonWithShortestName(ArrayList<Person> pplList)
     {
@@ -96,6 +121,10 @@ public class Controller implements AssignmentInterface
         return currentShortestName;
     }
 
+    /*
+    *
+    *
+     */
     @Override
     public Person byOurPowersCombinedWeAreCaptainPlanet(Person a, Person b)
     {
@@ -104,6 +133,11 @@ public class Controller implements AssignmentInterface
         return new Person("By " + first + "s and " + second + "s powers combined, this is Captain Planet!");
     }
 
+    /*
+    *
+    *
+    *
+    */
     @Override
     public ArrayList<Person> sortPeopleByName(ArrayList<Person> pplList)
     {
@@ -123,11 +157,16 @@ public class Controller implements AssignmentInterface
         return pList;
     }
 
+    /*
+    *
+    *
+    *
+    */
     @Override
     public boolean savePersonListToFile(boolean append, ArrayList<Person> pplList) throws FileNotFoundException
     {
 
-        try (PrintWriter pw = new PrintWriter(new FileWriter("/home/pagh/2_SEMESTER/test/TestAss4/src/pagh/cphbusiness/nameFile", true)))
+        try (PrintWriter pw = new PrintWriter(new FileWriter("nameFile", true)))
         {
             if (append)
             {
@@ -139,7 +178,7 @@ public class Controller implements AssignmentInterface
             }
             else
             {
-                PrintWriter pwNonAppend = new PrintWriter(new FileWriter("/home/pagh/2_SEMESTER/test/TestAss4/src/pagh/cphbusiness/nameFile"));
+                PrintWriter pwNonAppend = new PrintWriter(new FileWriter("nameFile"));
                 System.out.println("not appending");
                 StringBuilder sb = new StringBuilder();
                 for (Person p : pplList)
@@ -157,6 +196,11 @@ public class Controller implements AssignmentInterface
         return true;
     }
 
+    /*
+    *
+    *
+    *
+    */
     @Override
     public String makeJsonList(ArrayList<Person> pplList)
     {
@@ -164,6 +208,11 @@ public class Controller implements AssignmentInterface
         return gson.toJson(pplList);
     }
 
+    /*
+    *
+    *
+    *
+    */
     @Override
     public String makeJsonPerson(Person person)
     {
