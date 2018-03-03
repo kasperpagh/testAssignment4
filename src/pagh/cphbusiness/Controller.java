@@ -2,6 +2,7 @@ package pagh.cphbusiness;
 
 import com.google.gson.Gson;
 import pagh.cphbusiness.entities.Person;
+import pagh.cphbusiness.exceptions.IllegalNameException;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -16,10 +17,10 @@ public class Controller implements AssignmentInterface
     *
     */
     @Override
-    public String readFile() throws IOException
+    public String readFile(String fileName) throws IOException
     {
 
-        File file = new File("nameFile");
+        File file = new File(fileName);
         Scanner scanner = new Scanner(file);
         StringBuilder sb = new StringBuilder();
         try
@@ -46,7 +47,7 @@ public class Controller implements AssignmentInterface
     *
     */
     @Override
-    public Person parsePerson(String name)
+    public Person parsePerson(String name) throws IllegalNameException
     {
         return new Person(name);
     }
@@ -57,10 +58,10 @@ public class Controller implements AssignmentInterface
     *
     */
     @Override
-    public ArrayList<Person> getAllPeople() throws IOException
+    public ArrayList<Person> getAllPeople(String fileName) throws IOException, IllegalNameException
     {
 
-        File file = new File("nameFile");
+        File file = new File(fileName);
         Scanner scanner = new Scanner(file);
         ArrayList<Person> pplList = new ArrayList<>();
         try
@@ -126,11 +127,11 @@ public class Controller implements AssignmentInterface
     *
      */
     @Override
-    public Person byOurPowersCombinedWeAreCaptainPlanet(Person a, Person b)
+    public Person byOurPowersCombinedWeAreCaptainPlanet(Person a, Person b) throws IllegalNameException
     {
         String first = a.getName();
         String second = b.getName();
-        return new Person("By " + first + "s and " + second + "s powers combined, this is Captain Planet!");
+        return new Person("by our powers combined, we are Captain planet");
     }
 
     /*
@@ -139,7 +140,7 @@ public class Controller implements AssignmentInterface
     *
     */
     @Override
-    public ArrayList<Person> sortPeopleByName(ArrayList<Person> pplList)
+    public ArrayList<Person> sortPeopleByName(ArrayList<Person> pplList) throws IllegalNameException
     {
         ArrayList<String> tempList = new ArrayList<>();
 
@@ -163,10 +164,14 @@ public class Controller implements AssignmentInterface
     *
     */
     @Override
-    public boolean savePersonListToFile(boolean append, ArrayList<Person> pplList) throws FileNotFoundException
+    public boolean savePersonListToFile(boolean append, ArrayList<Person> pplList, String fileName) throws FileNotFoundException, IllegalArgumentException
     {
+        if (pplList == null)
+        {
+            throw new IllegalArgumentException();
+        }
 
-        try (PrintWriter pw = new PrintWriter(new FileWriter("nameFile", true)))
+        try (PrintWriter pw = new PrintWriter(new FileWriter(fileName, true)))
         {
             if (append)
             {
@@ -181,9 +186,16 @@ public class Controller implements AssignmentInterface
                 PrintWriter pwNonAppend = new PrintWriter(new FileWriter("nameFile"));
                 System.out.println("not appending");
                 StringBuilder sb = new StringBuilder();
-                for (Person p : pplList)
+                for (int i = 0; i < pplList.size(); i++)
                 {
-                    sb.append(p.getName());
+                    if(i == pplList.size()-1)
+                    {
+                        sb.append(pplList.get(i).getName());
+                    }
+                    else
+                    {
+                        sb.append(pplList.get(i).getName() + ",");
+                    }
                 }
                 pwNonAppend.println(sb.toString());
                 pwNonAppend.close();

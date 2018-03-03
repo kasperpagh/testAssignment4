@@ -14,15 +14,12 @@ public class Main
 
         try
         {
-            System.out.println(ctrl.makeJsonList(ctrl.getAllPeople()));
-            Person p = new Person("bobby");
 
-            System.out.println(ctrl.makeJsonPerson(p));
+            System.out.println(ctrl.makeJsonList(ctrl.getAllPeople("nameFile")));
         }
         catch (IOException e)
         {
             e.printStackTrace();
         }
-
     }
 }
