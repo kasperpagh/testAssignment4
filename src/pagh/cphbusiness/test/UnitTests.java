@@ -1,13 +1,22 @@
 package pagh.cphbusiness.test;
+
 import com.google.gson.Gson;
-import org.junit.jupiter.api.*;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import pagh.cphbusiness.Controller;
 import pagh.cphbusiness.entities.Person;
 import pagh.cphbusiness.exceptions.IllegalNameException;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+
+import static org.hamcrest.Matchers.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class UnitTests
 {
@@ -17,7 +26,59 @@ public class UnitTests
     public static void setUpClass()
     {
         ctrl = new Controller();
+//        ArrayList<Person> people = new ArrayList();
+//        try
+//        {
+//            people.add(new Person("Kasper Roland Pagh"));
+//            people.add(new Person("Bubbers Babekar"));
+//            people.add(new Person("John Hitler"));
+//            people.add(new Person("Sussi"));
+//
+//            people.add(new Person("Leo"));
+//            people.add(new Person("MC Marry Poppinzz"));
+//            people.add(new Person("Heinrich Von Knùgelbreachen"));
+//            people.add(new Person("Gnomis Minimalis Totalishow, "));
+//            ctrl.savePersonListToFile(false, people, "nameFile");
+//        }
+//        catch (IllegalNameException e)
+//        {
+//            e.printStackTrace();
+//        }
+//        catch (FileNotFoundException e)
+//        {
+//            e.printStackTrace();
+//        }
+
     }
+
+    @AfterAll
+    public static void tearDownClass()
+    {
+    }
+//     ArrayList<Person> people = new ArrayList();
+//        try
+//        {
+//            people.add(new Person("Kasper Roland Pagh"));
+//            people.add(new Person("Bubbers Babekar"));
+//            people.add(new Person("John Hitler"));
+//            people.add(new Person("Sussi"));
+//
+//            people.add(new Person("Leo"));
+//            people.add(new Person("MC Marry Poppinzz"));
+//            people.add(new Person("Heinrich Von Knùgelbreachen"));
+//            people.add(new Person("Gnomis Minimalis Totalishow, "));
+//            ctrl.savePersonListToFile(false, people, "nameFile");
+//
+//
+//        }
+//        catch (IllegalNameException e)
+//        {
+//            e.printStackTrace();
+//        }
+//        catch (FileNotFoundException e)
+//        {
+//            e.printStackTrace();
+//        }
 
 
     //Nonsense filename given, therefore exception should be thrown
@@ -36,7 +97,8 @@ public class UnitTests
     {
         try
         {
-            assertTrue(ctrl.readFile("nameFile").equalsIgnoreCase("Kasper Roland Pagh, Bubbers Babekar, John Hitler, Sussi, Leo, MC Marry Poppinzz, Heinrich Von Knùgelbreachen, Gnomis Minimalis Totalishow, "));
+            assertThat(ctrl.readFile("nameFile"), startsWith("Kasper Roland Pagh,  Bubbers Babekar,  John Hitler,"));
+//            assertTrue(ctrl.readFile("nameFile").equalsIgnoreCase("Kasper Roland Pagh, Bubbers Babekar, John Hitler, Sussi, Leo, MC Marry Poppinzz, Heinrich Von Knùgelbreachen, Gnomis Minimalis Totalishow,"));
         }
         catch (IOException e)
         {
@@ -159,7 +221,6 @@ public class UnitTests
         }
         catch (IOException e)
         {
-            assertTrue(false);
         }
     }
 
@@ -344,6 +405,47 @@ public class UnitTests
         }
 
         assertTrue(true);
+    }
+
+    @Test
+    public void testCase20_hamcrest()
+    {
+        ArrayList<Person> people = new ArrayList<>();
+        try
+        {
+            people.add(new Person("Kasper Roland Pagh"));
+            people.add(new Person("Bubbers Babekar"));
+            people.add(new Person("John Hitler"));
+            people.add(new Person("Sussi"));
+
+            people.add(new Person("Leo"));
+            people.add(new Person("MC Marry Poppinzz"));
+            people.add(new Person("Heinrich Von Knùgelbreachen"));
+            people.add(new Person("Gnomis Minimalis Totalishow"));
+
+            assertThat(ctrl.getPersonWithShortestName(people).getName(), equalTo("Leo"));
+        }
+        catch (IllegalNameException e)
+        {
+            assertTrue(false);
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testCase21_Hamcreast()
+    {
+        try
+        {
+            assertThat(ctrl.getAllPeople("nameFile").size(), equalTo(9));
+        }
+        catch (IOException e)
+        {
+//            assertThat(false, equalTo(true));
+        }
     }
 }
 

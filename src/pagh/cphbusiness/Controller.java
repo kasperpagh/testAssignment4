@@ -29,8 +29,8 @@ public class Controller implements AssignmentInterface
             scanner.useDelimiter(",");
             while (scanner.hasNext())
             {
-                sb.append(scanner.next());
-                sb.append(", ");
+                sb.append(scanner.next()+", ");
+
             }
             scanner.close();
         }
@@ -189,16 +189,16 @@ public class Controller implements AssignmentInterface
                 StringBuilder sb = new StringBuilder();
                 for (int i = 0; i < pplList.size(); i++)
                 {
-                    if(i == pplList.size()-1)
+                    if (i == pplList.size() - 1)
                     {
-                        sb.append(pplList.get(i).getName());
+                        sb.append(pplList.get(i).getName() + ", ");
                     }
                     else
                     {
-                        sb.append(pplList.get(i).getName() + ",");
+                        sb.append(pplList.get(i).getName() + ", ");
                     }
                 }
-                pwNonAppend.println(sb.toString());
+                pwNonAppend.print(sb.toString());
                 pwNonAppend.close();
             }
         }

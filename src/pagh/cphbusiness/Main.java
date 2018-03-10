@@ -15,7 +15,7 @@ public class Main
         try
         {
 
-            System.out.println(ctrl.makeJsonList(ctrl.getAllPeople("nameFile")));
+            System.out.println(ctrl.readFile("nameFile"));
         }
         catch (IOException e)
         {
