@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec615653-464e-4cb2-a238-bc5998f919dc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestAss4/pagh/cphbusiness/Controller.class" afterPath="$PROJECT_DIR$/out/production/TestAss4/pagh/cphbusiness/Controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestAss4/pagh/cphbusiness/test/UnitTests.class" afterPath="$PROJECT_DIR$/out/production/TestAss4/pagh/cphbusiness/test/UnitTests.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nameFile" afterPath="$PROJECT_DIR$/nameFile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pagh/cphbusiness/AssignmentInterface.java" afterPath="$PROJECT_DIR$/src/pagh/cphbusiness/AssignmentInterface.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pagh/cphbusiness/Controller.java" afterPath="$PROJECT_DIR$/src/pagh/cphbusiness/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pagh/cphbusiness/Main.java" afterPath="$PROJECT_DIR$/src/pagh/cphbusiness/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pagh/cphbusiness/entities/Person.java" afterPath="$PROJECT_DIR$/src/pagh/cphbusiness/entities/Person.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pagh/cphbusiness/test/UnitTests.java" afterPath="$PROJECT_DIR$/src/pagh/cphbusiness/test/UnitTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,37 +18,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nameFile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nameFile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UnitTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/test/UnitTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3006">
-              <caret line="113" column="4" lean-forward="false" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
+            <state relative-caret-position="15">
+              <caret line="61" column="9" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,17 +33,25 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="192" column="60" lean-forward="false" selection-start-line="192" selection-start-column="60" selection-end-line="192" selection-end-column="60" />
+            <state relative-caret-position="1710">
+              <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#readFile#0;class#Controller#0" expanded="false" />
                 <element signature="method#parsePerson#0;class#Controller#0" expanded="false" />
-                <element signature="method#getPersonWithLongestName#0;class#Controller#0" expanded="false" />
+                <element signature="method#getAllPeople#0;class#Controller#0" expanded="false" />
                 <element signature="method#getPersonWithShortestName#0;class#Controller#0" expanded="false" />
                 <element signature="method#byOurPowersCombinedWeAreCaptainPlanet#0;class#Controller#0" expanded="false" />
-                <element signature="method#sortPeopleByName#0;class#Controller#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/entities/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,8 +90,8 @@
         <option value="$PROJECT_DIR$/src/pagh/cphbusiness/entities/Person.java" />
         <option value="$PROJECT_DIR$/src/pagh/cphbusiness/exceptions/IllegalNameException.java" />
         <option value="$PROJECT_DIR$/src/pagh/cphbusiness/Main.java" />
-        <option value="$PROJECT_DIR$/src/pagh/cphbusiness/Controller.java" />
         <option value="$PROJECT_DIR$/nameFile" />
+        <option value="$PROJECT_DIR$/src/pagh/cphbusiness/Controller.java" />
         <option value="$PROJECT_DIR$/src/pagh/cphbusiness/test/UnitTests.java" />
       </list>
     </option>
@@ -142,8 +124,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -188,7 +171,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,7 +201,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UnitTests.testCase19_GetAllPeople">
+  <component name="RunManager" selected="JUnit.UnitTests.testCase6_ParsePerson">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="pagh.cphbusiness.Main" />
@@ -235,31 +217,6 @@
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
-    </configuration>
-    <configuration name="UnitTests.testCase16_savePersonListToFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="pagh.cphbusiness.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TestAss4" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="pagh.cphbusiness.test" />
-      <option name="MAIN_CLASS_NAME" value="pagh.cphbusiness.test.UnitTests" />
-      <option name="METHOD_NAME" value="testCase16_savePersonListToFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration name="UnitTests.testCase17_savePersonListToFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -336,6 +293,31 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="UnitTests.testCase6_ParsePerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="pagh.cphbusiness.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TestAss4" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="pagh.cphbusiness.test" />
+      <option name="MAIN_CLASS_NAME" value="pagh.cphbusiness.test.UnitTests" />
+      <option name="METHOD_NAME" value="testCase6_ParsePerson" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -353,18 +335,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase16_savePersonListToFile" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase17_savePersonListToFile" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase18_makeJsonList" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase19_GetAllPeople" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase17_savePersonListToFile" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase18_makeJsonList" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase19_GetAllPeople" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase6_ParsePerson" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase19_GetAllPeople" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase18_makeJsonList" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase17_savePersonListToFile" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase16_savePersonListToFile" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase6_ParsePerson" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase19_GetAllPeople" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase18_makeJsonList" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UnitTests.testCase17_savePersonListToFile" />
       </list>
     </recent_temporary>
   </component>
@@ -379,14 +361,13 @@
       <option name="presentableId" value="Default" />
       <updated>1520013453347</updated>
       <workItem from="1520013460762" duration="9698000" />
-      <workItem from="1520096595273" duration="7379000" />
+      <workItem from="1520096595273" duration="7677000" />
+      <workItem from="1520236289371" duration="2670000" />
+      <workItem from="1520245623994" duration="598000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UnitTests_testCase16_savePersonListToFile - 2018.03.03 at 19h 46m 05s.xml">
-      <configuration name="UnitTests.testCase16_savePersonListToFile" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UnitTests_testCase16_savePersonListToFile - 2018.03.03 at 19h 46m 40s.xml">
       <configuration name="UnitTests.testCase16_savePersonListToFile" configurationId="JUnit" />
     </history-entry>
@@ -414,17 +395,18 @@
     <history-entry file="UnitTests_testCase19_GetAllPeople - 2018.03.03 at 20h 06m 03s.xml">
       <configuration name="UnitTests.testCase19_GetAllPeople" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UnitTests_testCase6_ParsePerson - 2018.03.05 at 09h 34m 02s.xml">
+      <configuration name="UnitTests.testCase6_ParsePerson" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17077000" />
+    <option name="totallyTimeSpent" value="20643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1606" height="877" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756326" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -435,7 +417,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25225225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25868726" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -447,6 +429,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756326" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -459,19 +442,84 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/pagh/cphbusiness/Controller.java</url>
-          <line>143</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/test/UnitTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#parsePerson#0;class#Controller#0" expanded="false" />
+            <element signature="method#getAllPeople#0;class#Controller#0" expanded="false" />
+            <element signature="method#getPersonWithShortestName#0;class#Controller#0" expanded="false" />
+            <element signature="method#byOurPowersCombinedWeAreCaptainPlanet#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/entities/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nameFile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="192" column="60" lean-forward="false" selection-start-line="192" selection-start-column="60" selection-end-line="192" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#parsePerson#0;class#Controller#0" expanded="false" />
+            <element signature="method#getAllPeople#0;class#Controller#0" expanded="false" />
+            <element signature="method#getPersonWithShortestName#0;class#Controller#0" expanded="false" />
+            <element signature="method#byOurPowersCombinedWeAreCaptainPlanet#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/test/UnitTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="113" column="4" lean-forward="false" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -488,8 +536,6 @@
           <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -510,12 +556,10 @@
           <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#readFile#0;class#Controller#0" expanded="false" />
             <element signature="method#parsePerson#0;class#Controller#0" expanded="false" />
-            <element signature="method#getPersonWithLongestName#0;class#Controller#0" expanded="false" />
+            <element signature="method#getAllPeople#0;class#Controller#0" expanded="false" />
             <element signature="method#getPersonWithShortestName#0;class#Controller#0" expanded="false" />
             <element signature="method#byOurPowersCombinedWeAreCaptainPlanet#0;class#Controller#0" expanded="false" />
-            <element signature="method#sortPeopleByName#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -547,26 +591,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/entities/Person.java">
+    <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="192" column="60" lean-forward="false" selection-start-line="192" selection-start-column="60" selection-end-line="192" selection-end-column="60" />
+        <state relative-caret-position="165">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#readFile#0;class#Controller#0" expanded="false" />
-            <element signature="method#parsePerson#0;class#Controller#0" expanded="false" />
-            <element signature="method#getPersonWithLongestName#0;class#Controller#0" expanded="false" />
-            <element signature="method#getPersonWithShortestName#0;class#Controller#0" expanded="false" />
-            <element signature="method#byOurPowersCombinedWeAreCaptainPlanet#0;class#Controller#0" expanded="false" />
-            <element signature="method#sortPeopleByName#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -575,28 +605,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="1710">
+          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#parsePerson#0;class#Controller#0" expanded="false" />
+            <element signature="method#getAllPeople#0;class#Controller#0" expanded="false" />
+            <element signature="method#getPersonWithShortestName#0;class#Controller#0" expanded="false" />
+            <element signature="method#byOurPowersCombinedWeAreCaptainPlanet#0;class#Controller#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/entities/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pagh/cphbusiness/test/UnitTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3006">
-          <caret line="113" column="4" lean-forward="false" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
+        <state relative-caret-position="15">
+          <caret line="61" column="9" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -13,7 +13,8 @@ public class Controller implements AssignmentInterface
 {
     /*
     * No border values since no input
-    *
+    * Reads a text file full of name
+    * The name of the file is nameFile
     *
     */
     @Override
@@ -42,7 +43,7 @@ public class Controller implements AssignmentInterface
     }
 
     /*
-    *
+    * Makes a new person object from a name
     *
     *
     */
@@ -54,7 +55,7 @@ public class Controller implements AssignmentInterface
 
     /*
     *
-    *
+    * returns all the people in the file as an arraylist
     *
     */
     @Override
@@ -81,7 +82,7 @@ public class Controller implements AssignmentInterface
     }
 
     /*
-    *
+    * find the person fomr the file with the longest name
     *
     *
     */
@@ -103,7 +104,7 @@ public class Controller implements AssignmentInterface
 
     /*
     *
-    *
+    * find the shortest name in the file
     *
     */
     @Override
@@ -123,7 +124,7 @@ public class Controller implements AssignmentInterface
     }
 
     /*
-    *
+    * returns a captain planet person object
     *
      */
     @Override
@@ -136,7 +137,7 @@ public class Controller implements AssignmentInterface
 
     /*
     *
-    *
+    * takes a list of people and sorts them by name
     *
     */
     @Override
@@ -160,7 +161,7 @@ public class Controller implements AssignmentInterface
 
     /*
     *
-    *
+    * saves a list of person objects to file
     *
     */
     @Override
@@ -209,7 +210,7 @@ public class Controller implements AssignmentInterface
     }
 
     /*
-    *
+    * parses a list of person objects to JSON
     *
     *
     */
@@ -223,7 +224,7 @@ public class Controller implements AssignmentInterface
     /*
     *
     *
-    *
+    * parses a person object to JSON
     */
     @Override
     public String makeJsonPerson(Person person)

@@ -1,14 +1,10 @@
 package pagh.cphbusiness.test;
-
 import com.google.gson.Gson;
 import org.junit.jupiter.api.*;
-
 import static org.junit.jupiter.api.Assertions.*;
-
 import pagh.cphbusiness.Controller;
 import pagh.cphbusiness.entities.Person;
 import pagh.cphbusiness.exceptions.IllegalNameException;
-
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -335,7 +331,7 @@ public class UnitTests
     }
 
     @Test
-    public void testCase19_GetAllPeople()
+    public void testCase19_JsonParsePerson()
     {
         try
         {
